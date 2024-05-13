@@ -1,23 +1,23 @@
-
+"use client"
 import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from '../container';
 import Navbar from "../components/Navbar/Navbar";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <Navbar />
-        <Header />
-        {/* <AboutUs />
+    <main className="flex flex-col min-h-screen items-center p-5">
+      <Navbar />
+      <Header />
+      <div className="w-full grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <AboutUs />
         <SpecialMenu />
         <Chef />
         <Intro />
         <Laurels />
         <Gallery />
         <FindUs />
-        <Footer /> */}
-      
       </div>
+      <Footer />
     </main>
+
   );
 }

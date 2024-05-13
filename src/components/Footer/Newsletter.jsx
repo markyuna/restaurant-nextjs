@@ -15,6 +15,6 @@ const Newsletter = () => (
       <button type="button" className="custom__button">Subscribe</button>
     </div>
   </div>
-);
+);  
 
 export default Newsletter;
